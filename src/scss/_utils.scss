@@ -136,3 +136,28 @@ a:not([href]):not([tabindex]){
   align-items: center;
   justify-content: flex-start;
 }
+
+
+.value{
+  font-weight: 800;
+  color: #476D65;
+}
+
+.primary-button{
+  padding: 4px 12px;
+  background-color: #476D65;
+  border: 1px solid #476D65;
+  border-radius: 20px;
+
+  transition: all 0.5s ease-in-out;
+  color: #fff;
+
+  font-weight: 600;
+
+  &:hover{
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #476D65;
+    color: #476D65;
+  }
+}
