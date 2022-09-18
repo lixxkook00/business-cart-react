@@ -1,0 +1,286 @@
+@import '../../scss/animations';
+
+.flip-container {
+    position: relative; 
+    perspective: 800px;
+    width: 100%;
+    height: 490px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transform: rotateX(60deg) rotateZ(43deg);
+    
+}
+
+.flip-container.active{
+    z-index: 10;
+    position: fixed;
+    animation: move-custom 3s cubic-bezier(.6,0,.4,1) forwards;
+}
+
+
+.flip-container.comeback{
+    animation: move-back 1s cubic-bezier(.6,0,.4,1) forwards;
+    /* animation-direction: reverse; */
+}
+
+.flip-container.comeback .flipper {
+  animation: rotate-back 0.8s cubic-bezier(.6,0,.4,1) forwards;
+}
+
+.flip-container.active .flipper {
+  animation: rotate 2s cubic-bezier(.6,0,.4,1) forwards;
+}
+
+.flipper {
+    transform-style: preserve-3d;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-radius: 24px;    
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px; 
+}
+
+.flipper.move-to-cart{
+    animation: move-to-cart 0.8s forwards !important;
+}
+
+.flip-container.active .flipper{
+    box-shadow: none;
+}
+
+.flipper:hover {
+    transform: translate3D(-31px, -28px, 0px);
+    z-index: 10;
+    box-shadow: 30px 30px #ddd;
+}
+
+.flip-container.active .flipper:hover {
+    box-shadow: none;
+}
+
+.front,
+.back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  font-size: 20px;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  border-radius: 4%;
+  /* filter: drop-shadow(0.5px 1.5px 2px black); */
+}
+
+.front {
+  transform: rotateY(0deg);
+  background: url(../../../public/images/front.png) no-repeat 0 0 / cover;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+
+  transition: all 0.05s ease-in-out;
+}
+
+.back {
+    transform: rotateY(180deg);
+    background: url(../../../public/images/back.png) no-repeat 0 0 / cover;
+}
+
+.main{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+    overflow: hidden;
+    margin-top: -300px;
+}
+
+.main-wrapper{
+    padding: 16px;
+    width: 2400px;
+    
+    /*  */
+    display: flex;
+    /* transform: translateX(-110px); */
+}
+
+.wrapper-row{
+    margin: 10px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.card-list:nth-child(2){
+    padding-top: 2.2%;
+    padding-left: 2%;
+}
+
+.card-list:nth-child(3){
+    padding-top: 4.4%;
+    padding-left: 2%;
+}
+
+.card-list:nth-child(4){
+    padding-top: 6.6%;
+    padding-left: 2%;
+}
+
+.card-list:nth-child(5){
+    padding-top: 8.8%;
+    padding-left: 2%;
+}
+
+.card-list:nth-child(6){
+    padding-top: 11%;
+    padding-left: 2%;
+}
+
+.card-list:nth-child(7){
+    padding-top: 13.2%;
+    padding-left: 2%;
+}
+
+.card-item{
+    width: 310px;
+    height: 240px;
+    transition: all 0.3s ease-in-out;
+    padding: 0 10px;
+}
+
+
+
+.button{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: all 2s ease-in-out;
+    z-index: 2;
+    
+    animation : button-show 0.5s linear;
+}
+
+.button-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0 14vh;
+    width: 280px;
+}
+
+.button-item{
+    text-align: center;
+    padding: 6px 12px;
+    background-color: #fff;
+
+    min-width: 100px;
+
+    font-size: 14px;
+
+    border: 1px solid #ddd;
+
+    transition: all 0.3s linear;
+    
+    font-weight: 600;
+}
+
+.button-item:hover{
+    cursor: pointer;
+    background-color: #476D65;
+    color: #fff;
+}
+
+.infor{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+
+    width: 100vw;
+    padding: 10px 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.overlay{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+
+.card-item:nth-child(3n) .front{
+    filter: hue-rotate(45deg);
+}
+
+
+.card-item:nth-child(3n+1) .front{
+    filter: sepia(1);
+}
+
+.header-name{
+    font-weight: 800;
+    font-size: 30px;
+
+    -webkit-text-stroke: 1px black;
+    color: white;
+    text-shadow:
+        3px 3px 0 #000,
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+#loading{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #476D65;
+    z-index: 20;
+}
+
+.loader{
+  margin: 0 0 2em;
+  height: 100px;
+  width: 20%;
+  text-align: center;
+  padding: 1em;
+  margin: 0 auto 1em;
+  display: inline-block;
+  vertical-align: top;
+}
+
+/*
+  Set the color of the icon
+*/
+svg path,
+svg rect{
+  fill: #FF6700;
+}

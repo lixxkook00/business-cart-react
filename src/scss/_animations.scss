@@ -1,0 +1,127 @@
+
+
+/* ANIMATION */
+@keyframes rotate {
+  0% {
+    transform: rotateX(0deg)
+    rotateY(0deg) rotateZ(0deg)
+    }
+  60% {
+    transform: rotateX(360deg)
+    rotateY(180deg) rotateZ(-2deg)
+    }
+  100% {
+    transform: rotateX(360deg)
+    rotateY(0deg) rotateZ(0deg)
+    }
+}
+
+@keyframes rotate-back {
+  0% {
+    transform: rotateX(360deg)
+    rotateY(0deg) rotateZ(0deg)
+    }
+  60% {
+    transform: rotateX(360deg)
+    rotateY(180deg) rotateZ(-2deg)
+    }
+  100% {
+    transform: rotateX(0deg)
+    rotateY(0deg) rotateZ(0deg)
+    
+    }
+}
+
+@keyframes move {
+    0% {
+        top: 50px; 
+        right: 50px; 
+        transform: rotate(0deg)
+    }
+    20% {
+        top: calc(50% - 200px); 
+        right: calc(50% - 200px); 
+        max-width: 300px; 
+        width: 96%; 
+        height: 400px; 
+        transform: rotate(0deg)
+    }
+    80% {
+        top: calc(50% - 200px); 
+        right: calc(50% - 200px); 
+        max-width: 300px; 
+        width: 96%; 
+        height: 400px; 
+        transform: rotate(-15deg)
+    }
+    100% {
+        top: 50px; 
+        right: 50px; 
+        max-width: 300px; 
+        width: 96%; 
+        height: 480px; 
+        transform: rotate(0deg)
+    }
+}
+
+@keyframes move-back {
+    0% {
+        top: calc(50% - 200px); 
+        right: calc(50% - 200px); 
+        max-width: 300px; 
+        width: 96%; 
+        height: 400px;
+        transform: rotate(0deg);
+    }
+    100% { 
+        transform: rotateX(60deg) rotateZ(43deg);
+    }
+}
+
+@keyframes move-custom {
+    0% {
+        top: calc(50% - 200px); 
+        right: calc(50% - 200px);
+        max-width: 300px; 
+        width: 96%;
+        height: 400px;
+        transform: rotateX(60deg) rotateZ(43deg);
+    }   
+    20% {
+        top: calc(50% - 200px); 
+        right: calc(50% - 200px); 
+        max-width: 300px; 
+        width: 96%; 
+        height: 400px; 
+        transform: rotate(0deg);
+    }
+    100% {
+        top: calc(50% - 250px); 
+        right: calc(50% - 150px); 
+        max-width: 300px; 
+        width: 96%; 
+        height: 479px; 
+        transform: rotate(0deg)
+    }
+}
+
+@keyframes button-show {
+    0% {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+
+@keyframes move-to-cart {
+  0% {
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(calc(50vw - 40px)) translateY(calc(-50vh + 40px)) scale(0.01);
+  }
+}
