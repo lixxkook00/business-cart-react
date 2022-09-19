@@ -42,7 +42,7 @@ export default function DemoCart4() {
 
     return (
     <>
-        <div className='card-item'>
+        <div className='card-item card-item--4'>
             <div 
                 ref={card}
                 className={`flip-container ${activeState}`} 
@@ -56,6 +56,18 @@ export default function DemoCart4() {
                             backgroundImage: `url('./images/card-front-04.jpg')`
                         }}
                     >
+                        <div className="card-name">
+                            Le Quang Linh
+                        </div>
+                        <div className="card-address">
+                            Nguyen Oanh, Go Vap, HCM
+                        </div>
+                        <div className="card-email">
+                            example@example.com
+                        </div>
+                        <div className="card-phone">
+                            086 68 68 68 68
+                        </div>
                     </div>
                     <div 
                         className="back"

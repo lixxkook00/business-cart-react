@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
+import './DemoCart.scss'
 
 export default function DemoCart1() {
 
@@ -42,7 +43,7 @@ export default function DemoCart1() {
 
     return (
     <>
-        <div className='card-item'>
+        <div className='card-item card-item--1'>
             <div 
                 ref={card}
                 className={`flip-container ${activeState}`} 
@@ -51,6 +52,18 @@ export default function DemoCart1() {
             >
                 <div className={`flipper ${toCartState}`}>
                     <div className="front">
+                        <div className="card-name">
+                            Le Quang Linh
+                        </div>
+                        <div className="card-address">
+                            Nguyen Oanh, Go Vap, HCM
+                        </div>
+                        <div className="card-email">
+                            example@example.com
+                        </div>
+                        <div className="card-phone">
+                            086 68 68 68 68
+                        </div>
                     </div>
                     <div className="back">
                     </div>
