@@ -3,13 +3,12 @@
 .flip-container {
     position: relative; 
     perspective: 800px;
-    width: 100%;
-    height: 490px;
+    width: 166%;
+    height: 290px;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
     transform-style: preserve-3d;
-    transform: rotateX(60deg) rotateZ(43deg);
-    
+    transform: rotateX(60deg) rotateZ(-47deg);
 }
 
 .flip-container.active{
@@ -51,9 +50,9 @@
 }
 
 .flipper:hover {
-    transform: translate3D(-31px, -28px, 0px);
+    transform: translate3D(29px, -28px, 0px);
     z-index: 10;
-    box-shadow: 30px 30px #ddd;
+    box-shadow: -34px 40px #ddd;
 }
 
 .flip-container.active .flipper:hover {
@@ -78,15 +77,15 @@
 
 .front {
   transform: rotateY(0deg);
-  background: url(../../../public/images/front.png) no-repeat 0 0 / cover;
-  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
-
+  background: url(../../../public/images/card-front-01.jpg) no-repeat center center;
+  background-size: contain;
+  box-shadow: rgb(0 0 0 / 15%) -2.6px 2.4px 1.2px;
   transition: all 0.05s ease-in-out;
 }
 
 .back {
     transform: rotateY(180deg);
-    background: url(../../../public/images/back.png) no-repeat 0 0 / cover;
+    background: url(../../../public/images/card-back-01.jpg) no-repeat 0 0 / cover;
 }
 
 .main{
@@ -227,14 +226,14 @@
     z-index: 2;
 }
 
-.card-item:nth-child(3n) .front{
-    filter: hue-rotate(45deg);
-}
+// .card-item:nth-child(3n) .front{
+//     filter: hue-rotate(45deg);
+// }
 
 
-.card-item:nth-child(3n+1) .front{
-    filter: sepia(1);
-}
+// .card-item:nth-child(3n+1) .front{
+//     filter: sepia(1);
+// }
 
 .header-name{
     font-weight: 800;

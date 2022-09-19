@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 
-export default function DemoCart1() {
+export default function DemoCart4() {
 
     const [activeState , setActiveState] = useState("")
     const [toCartState , setToCartState] = useState("")
@@ -50,9 +50,19 @@ export default function DemoCart1() {
                 onMouseMove={(e) => handleAnimation(e)}
             >
                 <div className={`flipper ${toCartState}`}>
-                    <div className="front">
+                    <div 
+                        className="front"
+                        style={{
+                            backgroundImage: `url('./images/card-front-04.jpg')`
+                        }}
+                    >
                     </div>
-                    <div className="back">
+                    <div 
+                        className="back"
+                        style={{
+                            backgroundImage: `url('./images/card-back-04.jpg')`
+                        }}
+                    >
                     </div>
                 </div>
             </div>

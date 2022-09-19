@@ -1,6 +1,9 @@
 import React from 'react'
 import DemoCart from '../../components/DemoCart'
-import HomeHeader from '../../components/DemoCart/HomeHeader'
+import DemoCart2 from '../../components/DemoCart2'
+import DemoCart3 from '../../components/DemoCart3'
+import DemoCart4 from '../../components/DemoCart4'
+import HomeHeader from '../../components/HomeHeader'
 import './Home.scss'
 
 export default function Home() {
@@ -17,155 +20,186 @@ export default function Home() {
               <div className="card-list">
                   <DemoCart />
 
-                  <DemoCart />
+                  <DemoCart2 />
+
+                  <DemoCart3 />
+
+                  <DemoCart4 />
 
                   <DemoCart />
 
-                  <DemoCart />
+                  <DemoCart2 />
+
+                  <DemoCart3 />
+
+                  <DemoCart4 />
 
                   <DemoCart />
 
-                  <DemoCart />
+                  <DemoCart2 />
 
-                  <DemoCart />
+                  <DemoCart3 />
 
-                  <DemoCart />
+                  <DemoCart4 />
+              </div>
 
-                  <DemoCart />
-
-                  <DemoCart />
+              <div className="card-list">
+                
+                <DemoCart4 />
+                
+                <DemoCart3 />
+                
+                <DemoCart2 />
+                
+                <DemoCart />
+                
+                <DemoCart4 />
+                
+                <DemoCart3 />
+                
+                <DemoCart2 />
+                
+                <DemoCart />
+                
+                <DemoCart4 />
+                
+                <DemoCart3 />
+                
+                <DemoCart2 />
+                
+                <DemoCart />
               </div>
 
               <div className="card-list">
                   <DemoCart />
 
-                  <DemoCart />
+                  <DemoCart2 />
+
+                  <DemoCart3 />
+
+                  <DemoCart4 />
 
                   <DemoCart />
 
-                  <DemoCart />
+                  <DemoCart2 />
+
+                  <DemoCart3 />
+
+                  <DemoCart4 />
 
                   <DemoCart />
 
-                  <DemoCart />
+                  <DemoCart2 />
 
-                  <DemoCart />
+                  <DemoCart3 />
 
-                  <DemoCart />
+                  <DemoCart4 />
+              </div>
 
-                  <DemoCart />
-
-                  <DemoCart />
+              <div className="card-list">
+                
+                <DemoCart4 />
+                
+                <DemoCart3 />
+                
+                <DemoCart2 />
+                
+                <DemoCart />
+                
+                <DemoCart4 />
+                
+                <DemoCart3 />
+                
+                <DemoCart2 />
+                
+                <DemoCart />
+                
+                <DemoCart4 />
+                
+                <DemoCart3 />
+                
+                <DemoCart2 />
+                
+                <DemoCart />
               </div>
 
               <div className="card-list">
                   <DemoCart />
 
-                  <DemoCart />
+                  <DemoCart2 />
+
+                  <DemoCart3 />
+
+                  <DemoCart4 />
 
                   <DemoCart />
 
-                  <DemoCart />
+                  <DemoCart2 />
+
+                  <DemoCart3 />
+
+                  <DemoCart4 />
 
                   <DemoCart />
 
-                  <DemoCart />
+                  <DemoCart2 />
 
-                  <DemoCart />
+                  <DemoCart3 />
 
-                  <DemoCart />
+                  <DemoCart4 />
+              </div>
 
-                  <DemoCart />
-
-                  <DemoCart />
+              <div className="card-list">
+                
+                <DemoCart4 />
+                
+                <DemoCart3 />
+                
+                <DemoCart2 />
+                
+                <DemoCart />
+                
+                <DemoCart4 />
+                
+                <DemoCart3 />
+                
+                <DemoCart2 />
+                
+                <DemoCart />
+                
+                <DemoCart4 />
+                
+                <DemoCart3 />
+                
+                <DemoCart2 />
+                
+                <DemoCart />
               </div>
 
               <div className="card-list">
                   <DemoCart />
 
-                  <DemoCart />
+                  <DemoCart2 />
+
+                  <DemoCart3 />
+
+                  <DemoCart4 />
 
                   <DemoCart />
 
-                  <DemoCart />
+                  <DemoCart2 />
+
+                  <DemoCart3 />
+
+                  <DemoCart4 />
 
                   <DemoCart />
 
-                  <DemoCart />
+                  <DemoCart2 />
 
-                  <DemoCart />
+                  <DemoCart3 />
 
-                  <DemoCart />
-
-                  <DemoCart />
-
-                  <DemoCart />
-              </div>
-
-              <div className="card-list">
-                  <DemoCart />
-
-                  <DemoCart />
-
-                  <DemoCart />
-
-                  <DemoCart />
-
-                  <DemoCart />
-
-                  <DemoCart />
-
-                  <DemoCart />
-
-                  <DemoCart />
-
-                  <DemoCart />
-
-                  <DemoCart />
-              </div>
-
-              <div className="card-list">
-                  <DemoCart />
-
-                  <DemoCart />
-
-                  <DemoCart />
-
-                  <DemoCart />
-
-                  <DemoCart />
-
-                  <DemoCart />
-
-                  <DemoCart />
-
-                  <DemoCart />
-
-                  <DemoCart />
-
-                  <DemoCart />
-              </div>
-
-              <div className="card-list">
-                  <DemoCart />
-
-                  <DemoCart />
-
-                  <DemoCart />
-
-                  <DemoCart />
-
-                  <DemoCart />
-
-                  <DemoCart />
-
-                  <DemoCart />
-
-                  <DemoCart />
-
-                  <DemoCart />
-
-                  <DemoCart />
+                  <DemoCart4 />
               </div>
 
           </div>
