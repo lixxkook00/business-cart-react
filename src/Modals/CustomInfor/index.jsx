@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
+import './CustomInfor.scss'
+
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import Form from 'react-bootstrap/Form';
+
 import { useDispatch, useSelector } from 'react-redux';
 import { changeInfor, closeInforModal } from '../../actions';
 
@@ -32,39 +35,40 @@ export default function CustomInfor() {
    <>
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <div className="centering w-100">
+          <div className="centering w-100 form-title">
             Custom your infor
           </div>
+           <div className="close-modal" variant="secondary" onClick={handleClose}>
+                <i class="fa-regular fa-circle-xmark"></i>
+            </div>
         </Modal.Header>
         
         <Modal.Body>
             <Form onSubmit={(e) => handleCustomInfor(e)}>
                 <Form.Group className="mb-3" controlId="name">
-                    <Form.Label>Name</Form.Label>
+                    <i className="fa-solid fa-signature"></i><Form.Label>Name</Form.Label>
                     <Form.Control type="text" placeholder="Enter your name" />
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="address">
-                    <Form.Label>Address</Form.Label>
+                    <i className="fa-solid fa-location-pin"></i><Form.Label>Address</Form.Label>
                     <Form.Control type="text" placeholder="Enter your address" />
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="email">
-                    <Form.Label>Email</Form.Label>
+                    <i className="fa-regular fa-envelope"></i><Form.Label>Email</Form.Label>
                     <Form.Control type="text" placeholder="Enter your email" />
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="phone">
-                    <Form.Label>Phone</Form.Label>
+                    <i className="fa-solid fa-phone"></i><Form.Label>Phone</Form.Label>
                     <Form.Control type="text" placeholder="Enter your Phone" />
                 </Form.Group>
                 
-                <Button variant="primary" type="submit">
+                <button className="primary-button mr-2 w-100" variant="primary" type="submit">
                     Submit
-                </Button>
-                <Button variant="secondary" onClick={handleClose}>
-                    Close
-                </Button>
+                </button>
+               
 
             </Form>
         </Modal.Body>
