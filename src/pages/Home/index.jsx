@@ -1,10 +1,11 @@
 import React from 'react'
+import './Home.scss'
+
 import DemoCart from '../../components/DemoCart'
 import DemoCart2 from '../../components/DemoCart2'
 import DemoCart3 from '../../components/DemoCart3'
 import DemoCart4 from '../../components/DemoCart4'
 import HomeHeader from '../../components/HomeHeader'
-import './Home.scss'
 
 export default function Home() {
 

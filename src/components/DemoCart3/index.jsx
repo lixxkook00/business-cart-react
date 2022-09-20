@@ -1,4 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
+import { useDispatch } from 'react-redux';
+import { openInforModal } from '../../actions';
 
 export default function DemoCart3() {
 
@@ -38,6 +40,11 @@ export default function DemoCart3() {
                 card.current.children[0].children[0].style.transform = "rotateY(0deg) rotateX(0deg)"
             },1000)
         },500)
+    }
+
+    const dispatch = useDispatch()
+    const handleShow = () => {
+        dispatch(openInforModal())
     }
 
     return (
@@ -85,7 +92,7 @@ export default function DemoCart3() {
 
             <div className="button">
                 <div className="button-wrapper">
-                    <div className="button-item">
+                    <div className="button-item" onClick={() => handleShow()}>
                         Customize
                     </div>
                     <div 

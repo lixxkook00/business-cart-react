@@ -3,6 +3,7 @@ import './HomeHeader.scss'
 
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
+import CustomInfor from '../../Modals/CustomInfor';
 
 export default function HomeHeader() {
 
@@ -72,6 +73,8 @@ export default function HomeHeader() {
                     0
                 </div>
             </div>
+
+            <CustomInfor />
 
             <Drawer
                 anchor={'right'}

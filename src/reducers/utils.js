@@ -9,7 +9,7 @@ const loadingPage = (state = initialState , action) => {
             return false
 
         default:
-            return true;
+            return false;
     }
 }
 

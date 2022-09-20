@@ -11,3 +11,24 @@ export const removeLoading = (status) => {
         payload: status,
     }
 }
+
+export const openInforModal = () => {
+    return {
+        type: 'OPEN',
+        payload: true,
+    }
+}
+
+export const closeInforModal = () => {
+    return {
+        type: 'CLOSE',
+        payload: false,
+    }
+}
+
+export const changeInfor = (infor) => {
+    return {
+        type: 'CHANGE',
+        payload: infor,
+    }
+}

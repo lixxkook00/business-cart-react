@@ -1,4 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
+import { useDispatch, useSelector } from 'react-redux';
+import { openInforModal } from '../../actions';
 
 export default function DemoCart4() {
 
@@ -40,6 +42,13 @@ export default function DemoCart4() {
         },500)
     }
 
+    const infor = useSelector(state => state.infor)
+
+    const dispatch = useDispatch()
+    const handleShow = () => {
+        dispatch(openInforModal())
+    }
+
     return (
     <>
         <div className='card-item card-item--4'>
@@ -57,16 +66,24 @@ export default function DemoCart4() {
                         }}
                     >
                         <div className="card-name">
-                            Le Quang Linh
+                            {
+                                infor.name
+                            }
                         </div>
                         <div className="card-address">
-                            Nguyen Oanh, Go Vap, HCM
+                            {
+                                infor.address
+                            }
                         </div>
                         <div className="card-email">
-                            example@example.com
+                            {
+                                infor.email
+                            }
                         </div>
                         <div className="card-phone">
-                            086 68 68 68 68
+                            {
+                                infor.phone
+                            }
                         </div>
                     </div>
                     <div 
@@ -97,7 +114,7 @@ export default function DemoCart4() {
 
             <div className="button">
                 <div className="button-wrapper">
-                    <div className="button-item">
+                    <div className="button-item" onClick={() => handleShow()}>
                         Customize
                     </div>
                     <div 
