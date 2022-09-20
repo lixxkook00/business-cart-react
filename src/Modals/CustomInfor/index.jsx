@@ -39,7 +39,7 @@ export default function CustomInfor() {
             Custom your infor
           </div>
            <div className="close-modal" variant="secondary" onClick={handleClose}>
-                <i class="fa-regular fa-circle-xmark"></i>
+                <i className="fa-regular fa-circle-xmark"></i>
             </div>
         </Modal.Header>
         

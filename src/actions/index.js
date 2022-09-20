@@ -1,14 +1,14 @@
-export const activeLoading = (status) => {
+export const activeLoading = () => {
     return {
         type: 'ACTVE',
-        payload: status,
+        payload: true,
     }
 }
 
-export const removeLoading = (status) => {
+export const removeLoading = () => {
     return {
         type: 'REMOVE',
-        payload: status,
+        payload: false,
     }
 }
 

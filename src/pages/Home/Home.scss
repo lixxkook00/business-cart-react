@@ -52,7 +52,7 @@
 .flipper:hover {
     transform: translate3D(29px, -28px, 0px);
     z-index: 10;
-    box-shadow: -34px 40px #ddd;
+    box-shadow: -34px 40px #dddddd42;
 }
 
 .flip-container.active .flipper:hover {
@@ -95,6 +95,8 @@
 
     overflow: hidden;
     margin-top: -300px;
+
+    background: #514d4d;
 }
 
 .main-wrapper{
