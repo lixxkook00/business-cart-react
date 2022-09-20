@@ -6,7 +6,6 @@ export default function Loading() {
     const globalState = useSelector(state => state.loading)
 
     useEffect(() => {
-        console.log("dcmm tao doi ne con cho",globalState)
     },[globalState])
 
     return (

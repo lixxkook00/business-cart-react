@@ -32,3 +32,10 @@ export const changeInfor = (infor) => {
         payload: infor,
     }
 }
+
+export const addNewCard = (card) => {
+    return {
+        type: 'ADD_CART',
+        payload: card,
+    }
+}

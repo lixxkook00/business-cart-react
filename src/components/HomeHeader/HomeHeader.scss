@@ -1,3 +1,5 @@
+@import '../../scss/animations';
+
 .header{
     position: fixed;
     top: 0;
@@ -23,11 +25,15 @@
         padding: 1px 8px;
         border-radius: 10px;
         background-color: rgba(255, 255, 255, 0.453);
-        border: 2px solid #fff;
+        border: 2px solid #476D65;
 
         position: relative;
 
         transition: all 0.5s ease-in-out;
+
+        &.active{
+            animation: wobble-horizontal 0.5s ease-in-out;
+        }
 
         i{
             color: #476D65;
@@ -55,6 +61,7 @@
             padding: 1px 4px;
             border-radius: 50%;
         }
+
     }
 
 }
@@ -91,6 +98,78 @@
                 font-size: 14px;
                 font-weight: 600;
                 color: rgb(92, 92, 92);
+            }
+        }
+    }
+
+    &-item{
+        display: flex;
+        padding: 10px 0;
+
+        &-img{
+            width: 80px;
+            margin-right: 10px;
+
+            border: 1px solid #476d65aa;
+            border-radius: 5px;
+            overflow: hidden;
+
+            img{
+                height: 100%;
+            }
+        }
+
+        &-content{
+            flex: 1;
+        }
+
+        &-name{
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+
+        &-quantity{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 80px;
+
+            &-button{
+                background-color: #476d65aa;
+                border-radius: 50%;
+                height: 18px;
+                width: 17px;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+                i{
+                    color: #fff;
+                    font-size: 10px;
+                }
+            }
+
+            &-value{
+                flex: 1;
+                margin: 0 2px;
+                border: 1px solid #476d65aa;
+                border-radius: 10px;
+                height: 22px;
+                overflow: hidden;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                input{
+                    width: 100%;
+                    font-size: 12px;
+                    font-weight: 700;
+                    color: #476d65aa;
+                    text-align: center;
+                    padding-top: 2px;
+                }
             }
         }
     }

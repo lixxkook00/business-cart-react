@@ -1,9 +1,13 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
-import { openInforModal } from '../../actions';
+import { addNewCard, openInforModal } from '../../actions';
+import Content from '../Content';
+import Content2 from '../Content2';
+import Content3 from '../Content3';
+import Content4 from '../Content4';
 import './DemoCart.scss'
 
-export default function DemoCart1() {
+export default function DemoCart({type}) {
     const dispatch = useDispatch()
 
     const [activeState , setActiveState] = useState("")
@@ -32,8 +36,25 @@ export default function DemoCart1() {
         }
     }
 
+    const infor = useSelector(state => state.infor)
+
+    const handleShow = () => {
+        dispatch(openInforModal())
+    }
+
+    // handle add to cart
     const handleAddToCart = () => {
         setToCartState('move-to-cart')
+
+        const newCard = {
+            img: `card-front-0${type}.jpg`,
+            name : `Card 0${type}`,
+            price: 100000,
+            quantity: 1
+        }
+
+        dispatch(addNewCard(newCard))
+
         setTimeout(() => {
             setActiveState('comeback')
             setTimeout(()=>{
@@ -44,15 +65,9 @@ export default function DemoCart1() {
         },500)
     }
 
-    const infor = useSelector(state => state.infor)
-
-    const handleShow = () => {
-        dispatch(openInforModal())
-    }
-
     return (
     <>
-        <div className='card-item card-item--1'>
+        <div className={`card-item card-item--${type}`}>
             <div 
                 ref={card}
                 className={`flip-container ${activeState}`} 
@@ -60,30 +75,29 @@ export default function DemoCart1() {
                 onMouseMove={(e) => handleAnimation(e)}
             >
                 <div className={`flipper ${toCartState}`}>
-                    <div className="front">
-                        <div className="card-name">
-                            {
-                                infor.name
-                            }
-                        </div>
-                        <div className="card-address">
-                            {
-                                infor.address
-                            }
-                        </div>
-                        <div className="card-email">
-                            {
-                                infor.email
-                            }
-                        </div>
-                        <div className="card-phone">
-                            {
-                                infor.phone
-                            }
-                        </div>
-                    </div>
-                    <div className="back">
-                    </div>
+                    {
+                        type===1
+                        &&
+                        <Content infor={infor}/>
+                    }
+
+                    {
+                        type===2
+                        &&
+                        <Content2 infor={infor}/>
+                    }
+
+                    {
+                        type===3
+                        &&
+                        <Content3 infor={infor}/>
+                    }
+
+                    {
+                        type===4
+                        &&
+                        <Content4 infor={infor}/>
+                    }
                 </div>
             </div>
         </div>

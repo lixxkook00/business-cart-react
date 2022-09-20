@@ -2,9 +2,6 @@ import React from 'react'
 import './Home.scss'
 
 import DemoCart from '../../components/DemoCart'
-import DemoCart2 from '../../components/DemoCart2'
-import DemoCart3 from '../../components/DemoCart3'
-import DemoCart4 from '../../components/DemoCart4'
 import HomeHeader from '../../components/HomeHeader'
 
 export default function Home() {
@@ -19,188 +16,188 @@ export default function Home() {
           <div className="main-wrapper">
 
               <div className="card-list">
-                  <DemoCart />
+                  <DemoCart type={1}/>
 
-                  <DemoCart2 />
+                  <DemoCart type={2} />
 
-                  <DemoCart3 />
+                  <DemoCart type={3} />
 
-                  <DemoCart4 />
+                  <DemoCart type={4} />
 
-                  <DemoCart />
+                  <DemoCart type={1}/>
 
-                  <DemoCart2 />
+                  <DemoCart type={2} />
 
-                  <DemoCart3 />
+                  <DemoCart type={3} />
 
-                  <DemoCart4 />
+                  <DemoCart type={4} />
 
-                  <DemoCart />
+                  <DemoCart type={1}/>
 
-                  <DemoCart2 />
+                  <DemoCart type={2} />
 
-                  <DemoCart3 />
+                  <DemoCart type={3} />
 
-                  <DemoCart4 />
+                  <DemoCart type={4} />
               </div>
 
               <div className="card-list">
                 
-                <DemoCart4 />
+                <DemoCart type={4} />
                 
-                <DemoCart3 />
+                <DemoCart type={3} />
                 
-                <DemoCart2 />
+                <DemoCart type={2} />
                 
-                <DemoCart />
+                <DemoCart type={1}/>
                 
-                <DemoCart4 />
+                <DemoCart type={4} />
                 
-                <DemoCart3 />
+                <DemoCart type={3} />
                 
-                <DemoCart2 />
+                <DemoCart type={2} />
                 
-                <DemoCart />
+                <DemoCart type={1}/>
                 
-                <DemoCart4 />
+                <DemoCart type={4} />
                 
-                <DemoCart3 />
+                <DemoCart type={3} />
                 
-                <DemoCart2 />
+                <DemoCart type={2} />
                 
-                <DemoCart />
+                <DemoCart type={1}/>
               </div>
 
               <div className="card-list">
-                  <DemoCart />
+                  <DemoCart type={1}/>
 
-                  <DemoCart2 />
+                  <DemoCart type={2} />
 
-                  <DemoCart3 />
+                  <DemoCart type={3} />
 
-                  <DemoCart4 />
+                  <DemoCart type={4} />
 
-                  <DemoCart />
+                  <DemoCart type={1}/>
 
-                  <DemoCart2 />
+                  <DemoCart type={2} />
 
-                  <DemoCart3 />
+                  <DemoCart type={3} />
 
-                  <DemoCart4 />
+                  <DemoCart type={4} />
 
-                  <DemoCart />
+                  <DemoCart type={1}/>
 
-                  <DemoCart2 />
+                  <DemoCart type={2} />
 
-                  <DemoCart3 />
+                  <DemoCart type={3} />
 
-                  <DemoCart4 />
-              </div>
-
-              <div className="card-list">
-                
-                <DemoCart4 />
-                
-                <DemoCart3 />
-                
-                <DemoCart2 />
-                
-                <DemoCart />
-                
-                <DemoCart4 />
-                
-                <DemoCart3 />
-                
-                <DemoCart2 />
-                
-                <DemoCart />
-                
-                <DemoCart4 />
-                
-                <DemoCart3 />
-                
-                <DemoCart2 />
-                
-                <DemoCart />
-              </div>
-
-              <div className="card-list">
-                  <DemoCart />
-
-                  <DemoCart2 />
-
-                  <DemoCart3 />
-
-                  <DemoCart4 />
-
-                  <DemoCart />
-
-                  <DemoCart2 />
-
-                  <DemoCart3 />
-
-                  <DemoCart4 />
-
-                  <DemoCart />
-
-                  <DemoCart2 />
-
-                  <DemoCart3 />
-
-                  <DemoCart4 />
+                  <DemoCart type={4} />
               </div>
 
               <div className="card-list">
                 
-                <DemoCart4 />
+                <DemoCart type={4} />
                 
-                <DemoCart3 />
+                <DemoCart type={3} />
                 
-                <DemoCart2 />
+                <DemoCart type={2} />
                 
-                <DemoCart />
+                <DemoCart type={1}/>
                 
-                <DemoCart4 />
+                <DemoCart type={4} />
                 
-                <DemoCart3 />
+                <DemoCart type={3} />
                 
-                <DemoCart2 />
+                <DemoCart type={2} />
                 
-                <DemoCart />
+                <DemoCart type={1}/>
                 
-                <DemoCart4 />
+                <DemoCart type={4} />
                 
-                <DemoCart3 />
+                <DemoCart type={3} />
                 
-                <DemoCart2 />
+                <DemoCart type={2} />
                 
-                <DemoCart />
+                <DemoCart type={1}/>
               </div>
 
               <div className="card-list">
-                  <DemoCart />
+                  <DemoCart type={1}/>
 
-                  <DemoCart2 />
+                  <DemoCart type={2} />
 
-                  <DemoCart3 />
+                  <DemoCart type={3} />
 
-                  <DemoCart4 />
+                  <DemoCart type={4} />
 
-                  <DemoCart />
+                  <DemoCart type={1}/>
 
-                  <DemoCart2 />
+                  <DemoCart type={2} />
 
-                  <DemoCart3 />
+                  <DemoCart type={3} />
 
-                  <DemoCart4 />
+                  <DemoCart type={4} />
 
-                  <DemoCart />
+                  <DemoCart type={1}/>
 
-                  <DemoCart2 />
+                  <DemoCart type={2} />
 
-                  <DemoCart3 />
+                  <DemoCart type={3} />
 
-                  <DemoCart4 />
+                  <DemoCart type={4} />
+              </div>
+
+              <div className="card-list">
+                
+                <DemoCart type={4} />
+                
+                <DemoCart type={3} />
+                
+                <DemoCart type={2} />
+                
+                <DemoCart type={1}/>
+                
+                <DemoCart type={4} />
+                
+                <DemoCart type={3} />
+                
+                <DemoCart type={2} />
+                
+                <DemoCart type={1}/>
+                
+                <DemoCart type={4} />
+                
+                <DemoCart type={3} />
+                
+                <DemoCart type={2} />
+                
+                <DemoCart type={1}/>
+              </div>
+
+              <div className="card-list">
+                  <DemoCart type={1}/>
+
+                  <DemoCart type={2} />
+
+                  <DemoCart type={3} />
+
+                  <DemoCart type={4} />
+
+                  <DemoCart type={1}/>
+
+                  <DemoCart type={2} />
+
+                  <DemoCart type={3} />
+
+                  <DemoCart type={4} />
+
+                  <DemoCart type={1}/>
+
+                  <DemoCart type={2} />
+
+                  <DemoCart type={3} />
+
+                  <DemoCart type={4} />
               </div>
 
           </div>
